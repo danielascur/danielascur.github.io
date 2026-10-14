@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniela Scur</title>
+<meta name="description" content="Daniela Scur — Associate Professor in the Department of Economics at Monash University. Research on organizations, management practices, productivity and workers.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">DANIELA SCUR</a>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="academic-papers.html">Academic Work</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="policy.html">Policy &amp; Media</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li class="has-dropdown">
+        <a href="#" class="dd-toggle">Data &#9662;</a>
+        <ul class="dropdown">
+          <li><a href="http://www.worldmanagementsurvey.org" target="_blank" rel="noopener">WMS</a></li>
+          <li><a href="http://www.developingmanagement.org" target="_blank" rel="noopener">D-WMS</a></li>
+        </ul>
+      </li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li><a href="cv_danielascur_jul2026.pdf">CV</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I study <strong>organizations</strong> and how management and organizational practices affect <strong>performance and workers</strong> across countries and industries. My work focuses on the <strong>public</strong> sector (with a focus on principals as school managers and mayors/bureaucrats as government managers) and the <strong>private</strong> sector (with a focus on manufacturing firms, family firms and multinationals). The type of organizational outcomes I study include productivity, labour sorting and selection, inequality (of wage and opportunity) and mental health.</p>
+
+      <p>I am an Associate Professor in the <a href="https://www.monash.edu/business/economics">Department of Economics</a> at <a href="https://www.monash.edu/">Monash University</a>.</p>
+
+      <p>I am a Research Fellow at <a href="https://cepr.org/active/researchers/contact.php?IDENT=177061">CEPR</a>, the <a href="http://www.cep.lse.ac.uk">Centre for Economic Performance</a> (<a href="http://www.lse.ac.uk">London School of Economics</a>), the <a href="https://productivitypartnership.ca/people">Productivity Partnership</a> (Canada) and the <a href="https://foslab.org/">Forward Society Lab</a>. I am an invited researcher at <a href="https://www.povertyactionlab.org/latin-america-caribbean">JPAL LAC</a> and <a href="https://www.povertyactionlab.org/na">JPAL North America</a>. I work on three large data collection initiatives: the <a href="http://www.worldmanagementsurvey.org">World Management Survey</a>, the <a href="http://www.developingmanagement.org">Development WMS</a> and the <a href="http://www.labsmanagement.org">Scientific Labs Management Survey</a>.</p>
+
+    </div>
+
+    <div class="about-aside">
+      <img class="about-photo" src="images/headshot.jpg" alt="Daniela Scur">
+      <div class="meta-block">
+        <p><strong>Fields:</strong> Organizational economics (primary), development, labor, education</p>
+        <p><strong>Contact:</strong> <a href="mailto:dscur@monash.edu">dscur@monash.edu</a> | <a href="mailto:d.scur@lse.ac.uk">d.scur@lse.ac.uk</a></p>
+        <p><strong>Find me:</strong> <a href="https://scholar.google.com/citations?user=wdieB9cAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> | <a href="https://bsky.app/profile/danielascur.bsky.social" target="_blank" rel="noopener">Bluesky (@danielascur)</a> | <a href="https://www.linkedin.com/in/danielascur" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="hl-heading">Latest work</h2>
+  <section class="highlight" aria-label="Latest work" id="highlight">
+    <article class="hl-slide active">
+      <span class="hl-kicker">New project</span>
+      <h2 class="hl-title"><a href="academic-papers.html">Everyone Is a Manager: AI Use as an Act of Management</a></h2>
+      <p class="hl-desc">With Ben Leyden — using an AI tool moves a worker from doing a task to managing it, reshaping which skills matter, who firms should hire, and how AI's gains are shared.</p>
+    </article>
+    <article class="hl-slide">
+      <span class="hl-kicker">Forthcoming &middot; JPE Micro</span>
+      <h2 class="hl-title"><a href="academic-papers.html">Understanding School Management with Public Data: A New Measurement Approach and Applications</a></h2>
+      <p class="hl-desc">With Clare Leaver and Renata Lemos — a new, scalable way to measure school management from existing public data, and what it reveals about learning.</p>
+    </article>
+    <article class="hl-slide">
+      <span class="hl-kicker">In the news &middot; Harvard Business Review</span>
+      <h2 class="hl-title"><a href="https://hbr.org/2026/06/the-u-s-research-talent-pipeline-is-in-trouble">The US Research Talent Pipeline is in Trouble</a></h2>
+      <p class="hl-desc">With Pierre Azoulay and Raffaella Sadun — why the pipeline that supplies US research talent is under strain, and what's at stake.</p>
+    </article>
+    <div class="hl-dots" id="hl-dots"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> Daniela Scur
+</footer>
+
+<script src="js/nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+(function () {
+  var box = document.getElementById('highlight');
+  if (!box) return;
+  var slides = Array.prototype.slice.call(box.querySelectorAll('.hl-slide'));
+  var dotsWrap = document.getElementById('hl-dots');
+  var i = 0, timer;
+  slides.forEach(function (s, n) {
+    var d = document.createElement('button');
+    d.className = 'hl-dot' + (n === 0 ? ' active' : '');
+    d.setAttribute('aria-label', 'Show highlight ' + (n + 1));
+    d.addEventListener('click', function () { show(n); reset(); });
+    dotsWrap.appendChild(d);
+  });
+  var dots = Array.prototype.slice.call(dotsWrap.children);
+  function show(n) {
+    i = n;
+    slides.forEach(function (s, k) { s.classList.toggle('active', k === n); });
+    dots.forEach(function (d, k) { d.classList.toggle('active', k === n); });
+  }
+  function next() { show((i + 1) % slides.length); }
+  function reset() { clearInterval(timer); timer = setInterval(next, 6000); }
+  reset();
+  box.addEventListener('mouseenter', function () { clearInterval(timer); });
+  box.addEventListener('mouseleave', reset);
+})();
+</script>
+</body>
+</html>
