@@ -78,6 +78,12 @@ window.PAPERS = {
       journal: 'Journal of the European Economic Association', volume: '12', number: '4', pages: '835--876', year: '2014',
       doi: '10.1111/jeea.12094' }
   },
+  'everyone-manager': {
+    bib: { type: 'unpublished', key: 'leyden2026everyone',
+      author: 'Leyden, Benjamin T. and Scur, Daniela',
+      title: 'Everyone Is a Manager: AI Use as an Act of Management',
+      note: 'CESifo Working Paper No. 13030', year: '2026', doi: '10.65864/iozbn1w8ld' }
+  },
   'poaching': {
     bib: { type: 'unpublished', key: 'chen2025poaching',
       author: 'Chen, Yi and Dal Ri, Fabiano and Jungbauer, Thomas and Scur, Daniela',
