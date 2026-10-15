@@ -84,6 +84,12 @@ window.PAPERS = {
       title: 'Everyone Is a Manager: AI Use as an Act of Management',
       note: 'CESifo Working Paper No. 13030', year: '2026', doi: '10.65864/iozbn1w8ld' }
   },
+  'before-exodus': {
+    bib: { type: 'article', key: 'azoulay2026pipeline',
+      author: 'Azoulay, Pierre and Sadun, Raffaella and Scur, Daniela',
+      title: 'The U.S. Research Talent Pipeline Is in Trouble',
+      journal: 'Harvard Business Review', year: '2026' }
+  },
   'poaching': {
     bib: { type: 'unpublished', key: 'chen2025poaching',
       author: 'Chen, Yi and Dal Ri, Fabiano and Jungbauer, Thomas and Scur, Daniela',

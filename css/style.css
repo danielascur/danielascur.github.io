@@ -265,14 +265,16 @@ p { margin: 0 0 18px; }
 /* ---------- Publications / research entries ---------- */
 .entry {
   display: grid;
-  grid-template-columns: 132px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 24px;
   padding: 26px 0;
   border-bottom: 1px solid var(--rule);
 }
 .entry:last-child { border-bottom: none; }
 .entry-thumb {
-  width: 132px;
+  width: 100%;
+  height: auto;
+  align-self: center;
   border-radius: 6px;
   border: 1px solid var(--rule);
   background: var(--bg-soft);
@@ -331,6 +333,8 @@ details.abstract p { color: var(--muted); margin: 10px 0 0; }
 .links a.lk-appendix:hover { background: #3a6b53; color: #fff; border-color: #3a6b53; }
 .links a.lk-repl { color: #8a6212; border-color: #e2d0a4; background: #faf3e2; }
 .links a.lk-repl:hover { background: #8a6212; color: #fff; border-color: #8a6212; }
+.links a.lk-companion { color: #5b4a8a; border-color: #cdc2e4; background: #f3effa; }
+.links a.lk-companion:hover { background: #5b4a8a; color: #fff; border-color: #5b4a8a; }
 
 .covered {
   font-family: var(--font-sans);
@@ -550,7 +554,7 @@ details.abstract p { color: var(--muted); margin: 10px 0 0; }
   .about-grid { grid-template-columns: 1fr; gap: 26px; }
   .about-photo { max-width: 220px; margin: 0 auto; }
   .entry { grid-template-columns: 1fr; gap: 14px; }
-  .entry-thumb { width: 160px; }
+  .entry-thumb { width: 220px; }
   .video-grid { grid-template-columns: 1fr; }
   .media-row { grid-template-columns: 1fr; gap: 5px; }
   .media-grid { grid-template-columns: 1fr; }
@@ -602,7 +606,7 @@ details.abstract p { color: var(--muted); margin: 10px 0 0; }
 .tab:hover { color: var(--accent); border-color: var(--accent); }
 .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-.filters { display: flex; gap: 7px; flex-wrap: nowrap; }
+.filters { display: flex; gap: 7px; flex-wrap: wrap; }
 .filter {
   font-family: var(--font-sans);
   font-size: 0.72rem;
@@ -633,6 +637,7 @@ details.abstract p { color: var(--muted); margin: 10px 0 0; }
   background: rgba(31, 58, 109, 0.08);
   border-radius: 4px;
   padding: 2px 8px;
+  margin-right: 6px;
   margin-bottom: 8px;
 }
 
